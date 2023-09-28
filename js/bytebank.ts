@@ -30,8 +30,8 @@ elementoFormulario.addEventListener("submit", function(event){
 
     // COLETA OS VALORES
     let tipoTransacao: string = inputTipoTransacao.value;
-    let valor: Number = inputValor.valueAsNumber; // .valueAsNumber; converte pra number |explicito|
-    let data: Date = inputData.value;
+    let valor: number = inputValor.valueAsNumber; // .valueAsNumber; converte pra number |explicito|
+    let data: Date = new Date( inputData.value ); // Date é exatamente assim e new Date( inputData.value); tambem
 
     if (tipoTransacao == "Depósito") {
         saldo += valor;         //Recebe uma string e concatena ARRUMAR         
