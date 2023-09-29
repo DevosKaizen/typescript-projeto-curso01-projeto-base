@@ -1,5 +1,8 @@
 
 let saldo = 3000;
+
+
+
 //                      fução chama do css   |elemento|class do css|as HTMLElement; asegurar em tempo de compilação
 const elementoSaldo = document.querySelector(" .saldo-valor .valor") as HTMLElement; 
 if (elementoSaldo != null ) {
