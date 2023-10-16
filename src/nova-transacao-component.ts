@@ -49,7 +49,7 @@ elementoFormulario.addEventListener("submit", function(event){
     elementoSaldo.textContent = saldo.toString(); //.toString() converte de modo explicito
         
     //OBJETO 
-    const novaTransacao: transacao = {
+    const novaTransacao: Transacao = {
         tipoTransacao: tipoTransacao,
         valor: valor,
         data: data
